@@ -1071,7 +1071,18 @@ main {
   text-decoration: none;
   color: white;
   cursor: pointer;
-	overflow: scroll;
+}
+.modal-content {
+  background: #1f1f1f;
+  color: white;
+  padding: 20px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90vh;  
+  overflow-y: auto;  
+  border-radius: 14px;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
 }
 
 
