@@ -1071,6 +1071,7 @@ main {
   text-decoration: none;
   color: white;
   cursor: pointer;
+	overflow: scroll;
 }
 
 
