@@ -1084,7 +1084,12 @@ main {
   position: relative;
   box-shadow: 0 0 25px rgba(0,0,0,0.8);
 }
-
+.portfolio-media {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
 
 /*-----------------------------------*\
   #BLOG
