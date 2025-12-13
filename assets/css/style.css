@@ -1086,9 +1086,11 @@ main {
 }
 .portfolio-media {
   width: 100%;
-  max-width: 600px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  max-width: 600px;   /* Samme visuelle størrelse */
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
 }
 
 /*-----------------------------------*\
