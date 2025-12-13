@@ -1098,6 +1098,14 @@ video.portfolio-media {
   background: #000;
 }
 
+@media (min-width: 1024px) {
+  .portfolio-media {
+    max-width: 720px;
+  }
+}
+
+
+
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
