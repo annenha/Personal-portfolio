@@ -1103,7 +1103,9 @@ video.portfolio-media {
     max-width: 720px;
   }
 }
-
+.bold-text {
+  font-weight: 600; /* 700 = bold */
+}
 
 
 /*-----------------------------------*\
