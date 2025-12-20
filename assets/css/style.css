@@ -22,11 +22,6 @@ body {
 
 
 body.darkmode {
-    outline: 10px solid red;
-}
-
-
-body.darkmode {
     background-color: var(--smoky-black);
     color: #ffffff;
 }
