@@ -5,7 +5,12 @@
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
+// light dark function
+const toggleBtn = document.getElementById("toggleBtn");
 
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("darkmode");
+});
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
