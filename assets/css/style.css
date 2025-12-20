@@ -1395,7 +1395,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-
+/**
+   * # DARK MODE
+   */
+	
+body.darkmode {
+  --bg-main: #121212;
+  --text-main: #ffffff;
+  --header-bg: #1f1f1f;
+  --card-bg: #1e1e1e;
+  --card-text: #ffffff;
+}
 
   /**
    * #REUSED STYLE
