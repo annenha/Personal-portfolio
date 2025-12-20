@@ -15,13 +15,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5bc14 /* Daylight default */
+    background-color: #f5bc14; /* Daylight */
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
 }
 
 body.darkmode {
-    background-color: #121212;
+    background-color: var(--smoky-black);
     color: #ffffff;
 }
 
@@ -178,8 +178,9 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
+/*
 body { background: var(--smoky-black); }
-
+*\
 
 
 
