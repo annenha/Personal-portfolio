@@ -11,7 +11,7 @@
 /*-----------------------------------*\
   #LIGHT/DARK
 \*-----------------------------------*/
-
+/*
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,11 +20,11 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/*
+
 body.darkmode {
     outline: 10px solid red;
 }
-*\
+
 
 body.darkmode {
     background-color: var(--smoky-black);
@@ -37,7 +37,7 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-
+*\
 
 
 /*-----------------------------------*\
@@ -516,7 +516,35 @@ main {
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
 
+/*-----------------------------------*\
+  #LIGHT/DARK
+\*-----------------------------------*/
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5bc14; /* Daylight */
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*
+body.darkmode {
+    outline: 10px solid red;
+}
+*\
+
+body.darkmode {
+    background-color: var(--smoky-black);
+    color: #ffffff;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 /*-----------------------------------*\
