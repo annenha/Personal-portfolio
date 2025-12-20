@@ -294,6 +294,29 @@ article.active {
 
 
 
+/*-----------------------------------*\
+  #LIGHT/DARK
+\*-----------------------------------*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Daylight default */
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.darkmode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 /*-----------------------------------*\
