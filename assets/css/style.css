@@ -301,7 +301,7 @@ article.active {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ff0000 /* Daylight default */
+    background-color: #121212 /* Daylight default */
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
 }
