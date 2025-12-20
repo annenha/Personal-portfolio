@@ -1406,6 +1406,24 @@ body.darkmode {
   --card-text: #ffffff;
 }
 
+
+	 /**
+   * #USE VARIABLES
+   */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+header {
+  background-color: var(--header-bg);
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+}
+	
   /**
    * #REUSED STYLE
    */
