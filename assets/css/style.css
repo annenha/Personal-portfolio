@@ -20,11 +20,17 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+
+body.darkmode {
+    outline: 10px solid red;
+}
+
+/*
 body.darkmode {
     background-color: var(--smoky-black);
     color: #ffffff;
 }
-
+*\
 button {
     margin: 20px;
     padding: 10px 16px;
