@@ -22,7 +22,7 @@ body {
 
 
 body.darkmode {
-    background-color: var(--smoky-black);
+    /*background-color: var(--smoky-black);*\
     color: #ffffff;
 }
 
