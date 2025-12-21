@@ -22,7 +22,12 @@ body {
 
 
 body.darkmode {
-    /*background-color: var(--smoky-black);*\
+    outline: 10px solid red;
+}
+
+
+body.darkmode {
+    background-color: var(--smoky-black);
     color: #ffffff;
 }
 
@@ -179,8 +184,9 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
+/*
 body { background: var(--smoky-black); }
-
+*\
 
 
 
@@ -1361,8 +1367,18 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 580px) {
 
+  /**
+   * CUSTOM PROPERTY
+   */
 
-	
+  :root {
+
+  --bg-main: #ffffff;
+  --text-main: #000000;
+  --header-bg: #f0f0f0;
+  --card-bg: #ffffff;
+  --card-text: #000000;
+
 	
     /**
      * typography
@@ -1378,6 +1394,36 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
+/**
+   * # DARK MODE
+   */
+	
+body.darkmode {
+  --bg-main: #121212;
+  --text-main: #ffffff;
+  --header-bg: #1f1f1f;
+  --card-bg: #1e1e1e;
+  --card-text: #ffffff;
+}
+
+
+	 /**
+   * #USE VARIABLES
+   */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+header {
+  background-color: var(--header-bg);
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+}
+	
   /**
    * #REUSED STYLE
    */
