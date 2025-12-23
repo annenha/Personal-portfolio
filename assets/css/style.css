@@ -26,6 +26,10 @@ body.darkmode {
     color: #ffffff;
 }
 
+body.darkmode .sidebar {
+  background: #333;
+}
+
 button {
     margin: 20px;
     padding: 10px 16px;
