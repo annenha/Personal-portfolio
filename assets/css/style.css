@@ -11,7 +11,7 @@
 /*-----------------------------------*\
   #LIGHT/DARK
 \*-----------------------------------*/
-
+/*
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@ body {
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
 }
-
+*/
 /*
 body.darkmode {
     background-color: var(--smoky-black);
