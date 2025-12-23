@@ -22,13 +22,10 @@ body {
 
 
 body.darkmode {
-    /*background-color: var(--smoky-black);*/
+    background-color: var(--smoky-black);
     color: #ffffff;
 }
 
-body.darkmode .sidebar {
-  background: #333;
-}
 
 button {
     margin: 20px;
