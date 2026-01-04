@@ -1774,6 +1774,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   --bg-tertiary: #2a2a2a;
 }
 
+/* Light mode overrides */
+body.light {
+  --bg-secondary: #ffffff;
+}
 
 
   /**
