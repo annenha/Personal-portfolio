@@ -9,7 +9,7 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 const toggleBtn = document.getElementById("toggleBtn");
 
 toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("darkmode");
+    document.body.classList.toggle("light");
 });
 
 // sidebar variables
