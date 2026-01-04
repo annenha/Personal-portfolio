@@ -1756,27 +1756,51 @@ textarea.form-input::-webkit-resizer { display: none; }
    * CUSTOM PROPERTY
    */
 
- :root {
-  --bg-primary: #0f0f0f;
-  --bg-secondary: #1e1e1e; /* Sidebar */
-  --bg-tertiary: #2a2a2a;
+	
+:root {
+    /* Dark mode colors (default) */
+    --bg-body: #0f0f0f;
+    --bg-sidebar: #1e1e1e;
+    --bg-navbar: #2a2a2a;
+    --bg-btn: #3a3a3a;
+    --text-color: #ffffff;
+
+    --transition-speed: 0.3s;
 }
 
-/* Light mode */
+/* Light mode colors */
 body.light {
-  --bg-secondary: #ffffff; /* Sidebar når lys modus */
+    --bg-body: #f5bc14;       /* Body bakgrunn */
+    --bg-sidebar: #ffffff;     /* Sidebar */
+    --bg-navbar: #ffdd55;      /* Navbar */
+    --bg-btn: #f0e5d8;         /* Toggle knapp */
+    --text-color: #000000;
 }
 
-/* Dark mode (default kan være mørk) */
-body.darkmode {
-  --bg-secondary: #1e1e1e;
+body {
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-/* Light mode */
-body.light {
-  --bg-secondary: #ffffff;
+.sidebar {
+    background-color: var(--bg-sidebar);
+    transition: background-color var(--transition-speed);
 }
 
+.navbar {
+    background-color: var(--bg-navbar);
+    transition: background-color var(--transition-speed);
+}
+
+#toggleBtn {
+    background-color: var(--bg-btn);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+
+	
   /**
    * REUSED STYLE
    */
