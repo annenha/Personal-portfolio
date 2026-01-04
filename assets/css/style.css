@@ -339,15 +339,14 @@ main {
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
-
 .sidebar {
+  background-color: var(--bg-secondary);
   margin-bottom: 15px;
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
-
-	background-color: var(--bg-secondary);
 }
+
 
 .sidebar.active { max-height: 405px; }
 
