@@ -16,6 +16,7 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", () => { elementToggleFunc(sidebar); });
 
+
 /*==================== OVERLAY ====================*/
 const overlay = document.querySelector("[data-overlay]");
 
@@ -23,6 +24,7 @@ const overlay = document.querySelector("[data-overlay]");
 const modals = document.querySelectorAll(".modal");
 const modalCloseBtns = document.querySelectorAll(".modal .close");
 
+/* ...
 // Åpne modal
 document.querySelectorAll(".project-item a").forEach(link => {
   link.addEventListener("click", function(e) {
@@ -34,6 +36,8 @@ document.querySelectorAll(".project-item a").forEach(link => {
   });
 });
 
+
+  
 // Lukk modal
 modalCloseBtns.forEach(btn => {
   btn.addEventListener("click", function() {
@@ -41,6 +45,19 @@ modalCloseBtns.forEach(btn => {
     overlay.classList.remove("active");
   });
 });
+*/
+
+// Åpne modal via event delegation
+document.querySelector(".project-list").addEventListener("click", function(e) {
+  const link = e.target.closest("a");
+  if (!link) return; // ikke klikk på noe annet
+  e.preventDefault();
+  const modalId = link.getAttribute("href").substring(1);
+  const modal = document.getElementById(modalId);
+  if (modal) modal.classList.add("active");
+  overlay.classList.add("active");
+});
+
 
 /*==================== TESTIMONIALS MODAL ====================*/
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
