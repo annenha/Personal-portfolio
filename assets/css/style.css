@@ -910,17 +910,19 @@ main {
 
 .filter-list { display: none; }
 
+/* ENDRET
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
 }
+*/
 
-.filter-select {
-	position: relative; /* holder dropdownen innenfor boxen */
-  	width: 100%; /* viktig at den ikke går ut av main */
-  	margin-bottom: 25px;
+.filter-select-box {
+  position: relative; /* holder dropdownen innenfor boxen */
+  width: 100%; /* viktig at den ikke går ut av main */
+  margin-bottom: 25px;
 }
-	/* holder dropdownen innenfor boxen
+.filter-select {
   background: var(--eerie-black-2);
   color: var(--light-gray);
   display: flex;
@@ -933,9 +935,8 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
- */
+ 
 
-	
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
 
 .select-list {
