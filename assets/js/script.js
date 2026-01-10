@@ -35,7 +35,7 @@ document.querySelectorAll(".project-item a").forEach(link => {
     overlay.classList.add("active");
   });
 });
-
+*/
 
   
 // Lukk modal
@@ -46,7 +46,7 @@ modalCloseBtns.forEach(btn => {
   });
 });
 
-*/
+
 
 
 // Åpne modal via event delegation
