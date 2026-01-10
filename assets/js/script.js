@@ -24,7 +24,7 @@ const overlay = document.querySelector("[data-overlay]");
 const modals = document.querySelectorAll(".modal");
 const modalCloseBtns = document.querySelectorAll(".modal .close");
 
-
+/* ... 
 // Åpne modal
 document.querySelectorAll(".project-item a").forEach(link => {
   link.addEventListener("click", function(e) {
@@ -45,6 +45,8 @@ modalCloseBtns.forEach(btn => {
     overlay.classList.remove("active");
   });
 });
+
+*/
 
 
 // Åpne modal via event delegation
