@@ -49,7 +49,7 @@ modalCloseBtns.forEach(btn => {
 
 // Åpne modal via event delegation (fungerer også etter filtrering)
 const projectList = document.querySelector(".project-list");
-projectList.addEventListener("click", (e) => {
+projectList.addEventListener("click", (a) => {
   const link = e.target.closest("a");
   if (!link) return;
   e.preventDefault();
