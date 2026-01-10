@@ -916,6 +916,11 @@ main {
 }
 
 .filter-select {
+	position: relative; /* holder dropdownen innenfor boxen */
+  	width: 100%; /* viktig at den ikke går ut av main */
+  	margin-bottom: 25px;
+}
+	/* holder dropdownen innenfor boxen
   background: var(--eerie-black-2);
   color: var(--light-gray);
   display: flex;
@@ -928,14 +933,20 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
+ */
 
+	
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
 
 .select-list {
-  background: var(--eerie-black-2);
-	position: relative;
-  /*-position: absolute;*/
-  /*-top: calc(100% + 6px);*/
+  		background: var(--eerie-black-2);
+		position: absolute;
+  		top: 100%; /* rett under select */
+  		left: 0;
+  		width: 100%; /* fyller select-box */
+  		z-index: 2;
+	
+  /*-top: calc(100% + 6px);
   width: 100%;
   padding: 6px;
   border: 1px solid var(--jet);
@@ -945,7 +956,9 @@ main {
   visibility: hidden;
   pointer-events: none;
   transition: 0.15s ease-in-out;
+*/
 }
+	
 
 .filter-select.active + .select-list {
   opacity: 1;
