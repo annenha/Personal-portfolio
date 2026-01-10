@@ -929,8 +929,9 @@ main {
 
 .select-list {
   background: var(--eerie-black-2);
-  position: absolute;
-  top: calc(100% + 6px);
+	position: relative;
+  /*-position: absolute;*/
+  /*-top: calc(100% + 6px);*/
   width: 100%;
   padding: 6px;
   border: 1px solid var(--jet);
