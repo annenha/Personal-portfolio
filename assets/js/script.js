@@ -47,12 +47,11 @@ modalCloseBtns.forEach(btn => {
 });
 
 
-
-
-// Åpne modal via event delegation
-document.querySelector(".project-list").addEventListener("click", function(e) {
+// Åpne modal via event delegation (fungerer også etter filtrering)
+const projectList = document.querySelector(".project-list");
+projectList.addEventListener("click", (e) => {
   const link = e.target.closest("a");
-  if (!link) return; // ikke klikk på noe annet
+  if (!link) return;
   e.preventDefault();
   const modalId = link.getAttribute("href").substring(1);
   const modal = document.getElementById(modalId);
