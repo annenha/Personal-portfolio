@@ -328,18 +328,20 @@ article.active {
   #MAIN
 \*-----------------------------------*/
 
-\*--------
+
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
+ 		width: 100%;
+		display: block; /* eller flex med column om du vil */	
 }
----------------------------*/
 
+/*
 main {
   position: relative; /* gjør at absolute-elementer plasseres innenfor main */
 }
-
+*/
 
 /*-----------------------------------*\
   #SIDEBAR
