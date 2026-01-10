@@ -86,9 +86,13 @@ const filterItems = document.querySelectorAll("[data-filter-item]");
 
 select.addEventListener("click", () => { elementToggleFunc(select); });
 
+// Funksjon for å filtrere prosjekter (case-insensitive)
 const filterFunc = function(selectedValue) {
+  selectedValue = selectedValue.toLowerCase();
   filterItems.forEach(item => {
-    const categories = item.dataset.category.split(",").map(cat => cat.trim());
+    const categories = item.dataset.category
+      .split(",")
+      .map(cat => cat.trim().toLowerCase());
     if (selectedValue === "all" || categories.includes(selectedValue)) {
       item.classList.add("active");
     } else {
@@ -143,7 +147,7 @@ const pages = document.querySelectorAll("[data-page]");
 navigationLinks.forEach((link, i) => {
   link.addEventListener("click", function() {
     pages.forEach((page, j) => {
-      if (link.innerHTML.toLowerCase() === page.dataset.page) {
+      if (link.innerHTML.toLowerCase() === page.dataset.page.toLowerCase()) {
         page.classList.add("active");
         navigationLinks[j].classList.add("active");
         window.scrollTo(0, 0);
