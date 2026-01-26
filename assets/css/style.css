@@ -917,17 +917,13 @@ main {
 }
 */
 
-/*.filter-select-box {
-   position: relative; holder dropdownen innenfor boxen */
- /* width: 100%;  viktig at den ikke går ut av main 
-  margin-bottom: 25px;
+.filter-select-box {
+   position: relative; /*holder dropdownen innenfor boxen */
+   width: 100%; /*  viktig at den ikke går ut av main */
+   margin-bottom: 25px;
    box-sizing: border-box;
-}*/
-
-.filter-select-box,
-.select-list {
-  min-width: 260px;
 }
+
 
 
 .filter-select {
@@ -988,11 +984,6 @@ main {
   width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
-
-    /* Løsningen mot tekst som stikker ut */
-  white-space: normal;
-  word-break: break-word;
-  text-align: left; /* valgfritt, gjør det ryddig */
 }
 
 
