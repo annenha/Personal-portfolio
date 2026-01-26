@@ -1696,9 +1696,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /**
  * responsive larger than 768px screen
- */
 
+
+@media (min-width: 768px) { */
 @media (min-width: 768px) {
+  .filter-select-box,
+  .select-list {
+    min-width: 260px;
+  }
+}
 
   /**
    * REUSED STYLE
