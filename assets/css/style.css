@@ -941,7 +941,7 @@ main {
 
 .select-list {
   		background: var(--eerie-black-2);
-		position: absolute;
+		  position: absolute;
   		top: 100%; /* rett under select */
   		left: 0;
   		width: 100%; /* fyller select-box */
@@ -952,12 +952,12 @@ main {
   padding: 6px;
   border: 1px solid var(--jet);
   border-radius: 14px;
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: 0.15s ease-in-out;
-*/
+  z-index: 2;*/
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: 0.15s ease-in-out;
+
 }
 	
 
